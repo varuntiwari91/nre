@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: clients
   tasks:
    - name: upgrade all packages
      become: yes
