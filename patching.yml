@@ -1,9 +1,9 @@
 ---
-- hosts: clients
+- hosts: localhost
   tasks:
    - name: upgrade all packages
      become: yes
-     become_user: user1
+     become_user: root
      yum:
        name: '*'
        state: latest
