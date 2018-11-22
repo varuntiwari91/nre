@@ -3,7 +3,7 @@
   tasks:
    - name: upgrade all packages
      become: yes
-     become_user: root
+     become_user: user1
      yum:
        name: '*'
        state: latest
